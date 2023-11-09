@@ -138,9 +138,7 @@ export default function Home() {
           }}
         />
 
-
-
-        <main className="relative max-w-[88.75rem] w-full mx-auto bg-[url('../img/about-us.png')] bg-no-repeat bg-auto">
+        <main className="relative max-w-[88rem] w-full mx-auto bg-[url('../img/about-us.png')] bg-no-repeat bg-auto">
 
 
 
@@ -167,7 +165,7 @@ export default function Home() {
       </section>
 
       <section className="pt-32 px-5">
-        <main className="bg-[url('../img/structure.png')] bg-no-repeat bg-auto pt-24">
+        <main className="bg-[url('../img/structure.png')] bg-no-repeat bg-auto pt-24 max-w-[88rem] mx-auto">
           <div>
             <div>
               <Swiper
@@ -563,9 +561,7 @@ export default function Home() {
       </section>
 
       <section className="relative px-6 pt-32 bg-[url('../img/yellow-bg.svg')] bg-yellow-position-1 lg:bg-yellow-position-2 bg-no-repeat bg-auto  "> {/* */}
-
-
-        <main className="relative max-w-[88.75rem] w-full mx-auto bg-[url('../img/contact-us.png')] bg-no-repeat bg-auto">
+        <main className="relative max-w-[88rem] w-full mx-auto bg-[url('../img/contact-us.png')] bg-no-repeat bg-auto">
 
           <h1 className="flex max-w-[14.625rem] text-3xl pt-24 mb-12 font-bold">Agende uma reunião</h1>
           <form action="" className="flex flex-col max-w-lg w-full mx-auto">
@@ -618,7 +614,7 @@ export default function Home() {
       </section>
 
       <footer className="p-5">
-        <main className="max-w-7xl m-auto">
+        <main className="max-w-[88rem] m-auto">
           <div className="mb-10">
             <ul className="flex flex-row mx-auto items-center justify-center gap-5 lg:justify-end">
               <li>
