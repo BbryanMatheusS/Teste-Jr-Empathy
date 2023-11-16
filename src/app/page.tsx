@@ -13,6 +13,7 @@ import 'swiper/css/pagination';
 
 import './styles.css';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import Link from 'next/link'
 
 
 import Predios from "@/img/predios.jpg"
@@ -51,19 +52,22 @@ export default function Home() {
       <div className="">
         <header className="z-[100] fixed w-full h-24 bg-white mv:bg-white/[0.2] mv:backdrop-blur-sm"> {/* w-screen bg-white/[0.2] backdrop-blur-sm fixed top-0 z-0  */}
           <nav className=" flex justify-between items-center h-full w-full max-w-[88rem] mx-auto px-4 2xl:px-24"> {/* flex max-w-[89rem] mx-auto items-center font-sans py-6 justify-between */}
-            <Image
-              src={Logo}
-              width={200}
-              height={200}
-              alt="Imagem Logo"
-            />
+
+            <Link href="/">
+              <Image
+                src={Logo}
+                width={200}
+                height={200}
+                alt="Imagem Logo"
+              />
+            </Link>
             <div className="hidden mv:flex">
               <ul className="hidden mv:flex">
-                <li className="ml-6 uppercase hover:border-b text-sm">Manifesto</li>
-                <li className="ml-6 uppercase hover:border-b text-sm">Fale Conosco</li>
-                <li className="ml-6 uppercase hover:border-b text-sm">Projetos</li>
-                <li className="ml-6 uppercase hover:border-b text-sm">empathy fator</li>
-                <li className="ml-6 uppercase hover:border-b text-sm">despertando violetas</li>
+                <li className="ml-6 uppercase hover:border-b text-sm"><Link href="/">Manifesto</Link></li>
+                <li className="ml-6 uppercase hover:border-b text-sm"><Link href="/">Fale Conosco</Link></li>
+                <li className="ml-6 uppercase hover:border-b text-sm"><Link href="/">Projetos</Link></li>
+                <li className="ml-6 uppercase hover:border-b text-sm"><Link href="/">empathy fator</Link></li>
+                <li className="ml-6 uppercase hover:border-b text-sm"><Link href="/">despertando violetas</Link></li>
               </ul>
             </div>
 
@@ -611,37 +615,57 @@ export default function Home() {
           <div className="mb-10">
             <ul className="flex flex-row mx-auto items-center justify-center gap-5 lg:justify-end">
               <li>
-                <Image
-                  src={Insta}
-                  width={25}
-                  height={25}
-                  alt="Imagem Logo"
-                />
+                <Link rel="stylesheet" href="https://www.instagram.com/empathy_company/">
+                  <Image
+                    src={Insta}
+                    width={25}
+                    height={25}
+                    alt="Imagem Logo"
+                  />
+                </Link>
+
               </li>
-              <li><Image
-                src={Linkedin}
-                width={25}
-                height={25}
-                alt="Imagem Logo"
-              /></li>
-              <li><Image
-                src={Bhanc}
-                width={30}
-                height={30}
-                alt="Imagem Logo"
-              /></li>
-              <li><Image
-                src={Spotify}
-                width={25}
-                height={25}
-                alt="Imagem Logo"
-              /></li>
-              <li><Image
-                src={Youtube}
-                width={25}
-                height={25}
-                alt="Imagem Logo"
-              /></li>
+              <li>
+                <Link href="https://www.linkedin.com/company/empathy-co/">
+                  <Image
+                    src={Linkedin}
+                    width={25}
+                    height={25}
+                    alt="Imagem Logo"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.behance.net/gallery/129337199/Empathy-Company?tracking_source=search_projects%7CEmpathy%20Company">
+                  <Image
+                    src={Bhanc}
+                    width={30}
+                    height={30}
+                    alt="Imagem Logo"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <Image
+                    src={Spotify}
+                    width={25}
+                    height={25}
+                    alt="Imagem Logo"
+                  />
+                </Link>
+
+              </li>
+              <li>
+                <Link href="https://www.youtube.com/channel/UCNYHxwDEnlYm1Ip-9hv55gw">
+                  <Image
+                    src={Youtube}
+                    width={25}
+                    height={25}
+                    alt="Imagem Logo"
+                  />
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-8 lg:flex-row lg:justify-between">
