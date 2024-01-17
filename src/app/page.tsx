@@ -78,7 +78,7 @@ export default function Home() {
             <div className={
               MenuOpen
                 ? "fixed right-0 top-0 w-[80%] mv:hidden h-screen bg-white px-4 pt-9 ease-in duration-500"
-                : "fixed right-[-100%] top-0 p-10 ease-in duration-500"
+                : "fixed right-[-150%] top-0 p-10 ease-in duration-500"
             }>
               <div className="flex w-full items-center justify-end">
                 <div onClick={handleNav} className="mv:hidden cursor-pointer pl-24">
